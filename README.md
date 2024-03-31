@@ -59,9 +59,15 @@ java -jar target/korber-consumer-0.0.1-SNAPSHOT.jar
 cd korber
 java -jar target/korber-0.0.1-SNAPSHOT.jar
 ```
+```bash
 The service korber should now be running on http://localhost:8081
+```
+
 and 
-The service korber should now be running on http://localhost:8080
+
+```bash
+The service korber-consumer should now be running on http://localhost:8080
+```
 
 Example
 
