@@ -1,16 +1,22 @@
-# tui-challenge-api
-TUI | Backend Developer :: Next step - Challenge
+# Welcome to Koerber Pharma Backend Challenge
+Koerber Pharma | Backend Developement :: Challenge
 
 GitHub Repository Information API
 
-The GitHub Repository Information API is a Spring Boot-based application that provides users with detailed information about GitHub repositories. It fetches repository data, including branches and their latest commits, for a specified GitHub user, ensuring that forked repositories are filtered out for clarity.
+In this repository you have two projects, the first for data ingestion and the second for consumption and access of that same data.
+Korber 
+Korber-Consumer[API]
 
 ## Features
 
-- Fetch repository information for a specified GitHub user.
-- Provide details on each repository including branch information and the last commit SHA.
-- Exclude forked repositories from the fetched data.
-- Reactive API built with Spring WebFlux.
+- Failover system
+- Sistributed System
+- Ingestion of large amounts of data
+- REST endpoint to get the data from the database for based on a price range.
+
+
+![image](https://github.com/AndreAlvesFreitasEngineer/korberChalange/assets/165584356/9ab16913-0fe5-421e-b670-23ecba123977)
+
 
 ## Getting Started
 
