@@ -1,0 +1,24 @@
+<configuration>
+
+    <!-- Appender para o arquivo de log -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/korber.log</file>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Appender para a saída do console -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Definindo o nível de log para o nível raiz -->
+    <root level="info">
+        <appender-ref ref="FILE" /> <!-- Referência ao appender para arquivo -->
+        <appender-ref ref="STDOUT" /> <!-- Referência ao appender para saída do console -->
+    </root>
+
+</configuration>
