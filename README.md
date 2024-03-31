@@ -34,80 +34,51 @@ What things you need to install the software and how to install them:
 - Maven
 - Git
 
-### Installing
+### Installing and Run
 
 A step-by-step series of examples that tell you how to get a development environment running:
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/drealves/tui-challenge-api.git
-cd tui-challenge-api.git
+git clone https://github.com/AndreAlvesFreitasEngineer/korberChalange.git
+cd korberChalange
 ```
 Install dependencies:
 ```bash
-mvn install
+docker-compose up -d
 ```
+all containers must be running, kafka, zookeper and the database and all dependencies.
+
 Run the application:
 ```bash
-mvn spring-boot:run
+cd korber-consumer
+java -jar target/korber-consumer-0.0.1-SNAPSHOT.jar
 ```
-The service should now be running on http://localhost:8080
+```bash
+cd korber
+java -jar target/korber-0.0.1-SNAPSHOT.jar
+```
+The service korber should now be running on http://localhost:8081
+and 
+The service korber should now be running on http://localhost:8080
 
 Example
 
-Fetching repository information for user drealves:
+Fetching the data from the database for based on a price range.:
 ```bash
-http://localhost:8080/api/v1/github/repositories/drealves?page=1&size=5
+http://localhost:8080/v1/api/rides?minPrice=10&maxPrice=20&page=0&size=10
 ```
 Running the Tests
 ```bash
+cd korber-consumer
 mvn test
 ```
-
-Built With
-
-    Spring Boot - The framework used
-    Maven - Dependency Management
-    Reactor - For building reactive applications
-    WebFlux - async no-bloking system
-
-
 Authors
 
-    André Freitas - drealves
-
-Acknowledgments
-
-    2 hours analyze
-    6 hours to test
-    7 hours coding
-    1 hour to comment
-    Dev total: 16 Hours
-
+    André Freitas 
 
 API doc 
 
     http://localhost:8080/swagger-ui/index.html
-
-Jenkis File in Repository
-
-Docker File in Repository
-
-Fargate file and api-gateway file are not designed for evaluation
-
-LoadBalancer URL: 
-
-    load-repo-api-225205433.eu-north-1.elb.amazonaws.com
-
-Swegger:
-
-    http://load-repo-api-225205433.eu-north-1.elb.amazonaws.com:8080/swagger-ui/index.html
-
-Example of request:
-    
-    GET http://load-repo-api-225205433.eu-north-1.elb.amazonaws.com:8080/api/v1/github/users/drealves/repositories?page=1&size=5
-
-Details:
-I didn't create the environment in ECS using cloudFormation, but I configured two EC2 instances, one with Jenkis and the other as a docker container. If the services are not up when they evaluate it is possible that they are down, but in the interview I will demonstrate the devop Build that I created. See you soon Any doubts, please let us know
 
