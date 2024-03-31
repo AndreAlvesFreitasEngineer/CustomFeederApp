@@ -17,6 +17,10 @@ Korber-Consumer[API]
 
 ![image](https://github.com/AndreAlvesFreitasEngineer/korberChalange/assets/165584356/9ab16913-0fe5-421e-b670-23ecba123977)
 
+Database:
+
+![image](https://github.com/AndreAlvesFreitasEngineer/korberChalange/assets/165584356/2bed4f38-c53f-46d5-a0dd-c19ef46ccdb4)
+
 
 ## Getting Started
 
