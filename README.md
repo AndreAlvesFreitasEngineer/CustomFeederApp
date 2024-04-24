@@ -1,4 +1,4 @@
-# Welcome to Koerber Pharma Backend Challenge
+# Welcome to CustomFeederApp
 Koerber Pharma | Backend Developement :: Challenge
 
 GitHub Repository Information API
