@@ -1,7 +1,4 @@
 # Welcome to CustomFeederApp
-Koerber Pharma | Backend Developement :: Challenge
-
-GitHub Repository Information API
 
 In this repository you have two projects, the first for data ingestion and the second for consumption and access of that same data.
 Korber 
